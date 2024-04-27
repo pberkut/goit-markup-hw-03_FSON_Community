@@ -1,0 +1,207 @@
+:root {
+  /* Fonts */
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Colors */
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
+
+  /* Color scheme */
+  --color-primary-brand: var(--iris);
+  --color-pressed-state: var(--ocean);
+  --color-dark: var(--navy-blue);
+  --color-success: var(--green);
+  --color-text: var(--slate);
+  --color-subtle-text: var(--light-slate);
+  --color-accent: var(--cornflower);
+  --color-light: var(--cloud);
+  --color-modal-overlay: var(--navy-blue-modal);
+  --color-hero-background: var(--grey);
+  --color-white-background: var(--white);
+  --color-modal-background: var(--dairy);
+}
+
+/* Preset styles */
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Default styles */
+.body {
+  font-family: var(--main-font);
+  line-height: calc(24/16);
+  letter-spacing: 0.02em;
+
+  color: var(--color-text)
+}
+
+.title {
+  color: var(--color-dark);
+}
+
+/* Header 2 */
+.section-title {
+  font-size: 36px;
+  font-weight: var(--font-weight-bold);
+  line-height: calc(40/36);
+}
+
+/* Header 3 */
+.item>.title {
+  font-size: 20px;
+  font-weight: var(--font-weight-medium);
+  line-height: calc(24/20);
+}
+
+/**
+  |============================
+  | Page header
+  |============================
+*/
+
+/* Navigation page */
+.page-nav .link {
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+
+  color: var(--color-dark);
+}
+
+.page-nav .link:hover {
+  color: var(--color-pressed-state);
+}
+
+/* Logo */
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: var(--font-weight-bold);
+  font-size: 18px;
+  line-height: calc(21/18);
+
+  color: var(--color-primary-brand);
+}
+
+.dark {
+  color: var(--color-dark);
+}
+
+.light {
+  color: var(--color-light);
+}
+
+/* Address link */
+.address-header {
+  font-style: normal;
+}
+
+.address-header .link {
+  font-weight: var(--font-weight-regular);
+
+  color: var(--color-text);
+}
+
+.address-header .link:hover {
+  color: var(--color-pressed-state);
+}
+
+/**
+  |============================
+  | Hero section
+  |============================
+*/
+.hero-section {
+  background-color: var(--color-dark);
+}
+
+/* Header 1 */
+.hero-section .title {
+  font-size: 56px;
+  font-weight: var(--font-weight-bold);
+  line-height: calc(56/60);
+
+  color: var(--white);
+}
+
+.btn {
+  font-weight: var(--font-weight-medium);
+  line-height: calc(24/16);
+  letter-spacing: 0.04em;
+
+  color: var(--white);
+  background-color: var(--color-primary-brand);
+}
+
+.btn:hover {
+  background-color: var(--color-pressed-state);
+}
+
+/**
+  |============================
+  | Advantages section
+  |============================
+*/
+.section-advantages .title {
+  font-size: 20px;
+  font-weight: var(--font-weight-medium);
+  line-height: calc(24/20);
+}
+
+
+/**
+  |============================
+  | Team section
+  |============================
+*/
+
+/**
+  |============================
+  | Portfolio section
+  |============================
+*/
+
+
+/**
+  |============================
+  | Page-footer
+  |============================
+*/
+.page-footer {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+/* =====================
+Others style
+===================== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

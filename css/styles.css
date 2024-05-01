@@ -1,5 +1,5 @@
 :root {
-  /* Fonts */
+  /* Fonts and typography*/
   --main-font: "Roboto", system-ui, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   --secondary-font: "Raleway", sans-serif;
   --font-weight-regular: 400;
@@ -40,7 +40,6 @@
   | Preset styles
   |============================
 */
-
 a {
   text-decoration: none;
 }
@@ -98,21 +97,9 @@ h3 {
 
 /**
   |============================
-  | Page header
+  | Components
   |============================
 */
-/* Navigation page */
-.page-nav .link {
-  font-size: 16px;
-  font-weight: var(--font-weight-medium);
-  color: var(--color-dark);
-}
-
-.page-nav .link:hover,
-.page-nav .link:focus {
-  color: var(--color-pressed-state);
-}
-
 /* Logo */
 .logo {
   font-family: var(--secondary-font);
@@ -132,25 +119,7 @@ h3 {
   color: var(--color-light);
 }
 
-/* Address link */
-.address-header .link {
-  color: var(--color-text);
-}
-
-.address-header .link:hover,
-.address-header .link:focus {
-  color: var(--color-pressed-state);
-}
-
-/**
-  |============================
-  | Hero section
-  |============================
-*/
-.hero-section {
-  background-color: var(--color-dark);
-}
-
+/* Button */
 .btn {
   font-weight: var(--font-weight-medium);
   line-height: calc(24/16);
@@ -166,6 +135,43 @@ h3 {
 .btn:focus {
   background-color: var(--color-pressed-state);
 }
+
+/* Link */
+.link {
+  color: var(--color-text);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--color-pressed-state);
+}
+
+/**
+  |============================
+  | Page header
+  |============================
+*/
+/* Navigation page */
+.page-nav .link {
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-dark);
+}
+
+.page-nav .link:hover,
+.page-nav .link:focus {
+  color: var(--color-pressed-state);
+}
+
+/**
+  |============================
+  | Hero section
+  |============================
+*/
+.hero-section {
+  background-color: var(--color-dark);
+}
+
 
 /**
   |============================

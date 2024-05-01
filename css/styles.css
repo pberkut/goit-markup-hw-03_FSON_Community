@@ -1,6 +1,6 @@
 :root {
   /* Fonts */
-  --main-font: "Roboto", sans-serif;
+  --main-font: "Roboto", system-ui, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   --secondary-font: "Raleway", sans-serif;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -35,38 +35,62 @@
   --color-modal-background: var(--dairy);
 }
 
-/* Preset styles */
-.link {
+/**
+  |============================
+  | Preset styles
+  |============================
+*/
+
+a {
   text-decoration: none;
 }
 
-.list {
-  list-style: none;
+ul {
   padding: 0;
+
+  list-style: none;
 }
 
-/* Default styles */
-.body {
+address {
+  font-style: normal;
+}
+
+/**
+  |============================
+  |  Default styles
+  |============================
+*/
+body {
   font-family: var(--main-font);
   line-height: calc(24/16);
   letter-spacing: 0.02em;
-
   color: var(--color-text)
 }
 
-.title {
+h1,
+h2,
+h3 {
+  font-weight: var(--font-weight-bold);
   color: var(--color-dark);
 }
 
+/* Header 1 */
+h1 {
+  font-size: 56px;
+  line-height: calc(60/56);
+  color: var(--white);
+  text-align: center;
+}
+
 /* Header 2 */
-.section-title {
+h2 {
   font-size: 36px;
-  font-weight: var(--font-weight-bold);
   line-height: calc(40/36);
+  text-align: center;
 }
 
 /* Header 3 */
-.item>.title {
+h3 {
   font-size: 20px;
   font-weight: var(--font-weight-medium);
   line-height: calc(24/20);
@@ -77,27 +101,26 @@
   | Page header
   |============================
 */
-
 /* Navigation page */
 .page-nav .link {
   font-size: 16px;
   font-weight: var(--font-weight-medium);
-
   color: var(--color-dark);
 }
 
-.page-nav .link:hover {
+.page-nav .link:hover,
+.page-nav .link:focus {
   color: var(--color-pressed-state);
 }
 
 /* Logo */
 .logo {
   font-family: var(--secondary-font);
-  font-weight: var(--font-weight-bold);
   font-size: 18px;
+  font-weight: var(--font-weight-bold);
   line-height: calc(21/18);
-
   color: var(--color-primary-brand);
+  text-transform: uppercase;
 }
 
 .dark {
@@ -109,17 +132,12 @@
 }
 
 /* Address link */
-.address-header {
-  font-style: normal;
-}
-
 .address-header .link {
-  font-weight: var(--font-weight-regular);
-
   color: var(--color-text);
 }
 
-.address-header .link:hover {
+.address-header .link:hover,
+.address-header .link:focus {
   color: var(--color-pressed-state);
 }
 
@@ -132,25 +150,19 @@
   background-color: var(--color-dark);
 }
 
-/* Header 1 */
-.hero-section .title {
-  font-size: 56px;
-  font-weight: var(--font-weight-bold);
-  line-height: calc(56/60);
-
-  color: var(--white);
-}
-
 .btn {
   font-weight: var(--font-weight-medium);
   line-height: calc(24/16);
   letter-spacing: 0.04em;
-
   color: var(--white);
+
   background-color: var(--color-primary-brand);
+
+  cursor: pointer;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-color: var(--color-pressed-state);
 }
 
@@ -159,25 +171,21 @@
   | Advantages section
   |============================
 */
-.section-advantages .title {
-  font-size: 20px;
-  font-weight: var(--font-weight-medium);
-  line-height: calc(24/20);
-}
-
 
 /**
   |============================
   | Team section
   |============================
 */
+.section-team {
+  background-color: var(--color-light);
+}
 
 /**
   |============================
   | Portfolio section
   |============================
 */
-
 
 /**
   |============================
@@ -190,7 +198,7 @@
 }
 
 /* =====================
-Others style
+Utility style
 ===================== */
 .visually-hidden {
   position: absolute;

@@ -40,12 +40,29 @@
   | Preset styles
   |============================
 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
 }
 
 ul {
   padding: 0;
+  margin: 0;
 
   list-style: none;
 }
@@ -63,7 +80,9 @@ body {
   font-family: var(--main-font);
   line-height: calc(24/16);
   letter-spacing: 0.02em;
-  color: var(--color-text)
+  color: var(--color-text);
+
+  background-color: var(--color-white-background);
 }
 
 h1,
@@ -95,11 +114,21 @@ h3 {
   line-height: calc(24/20);
 }
 
+.container {
+  width: 1200;
+}
+
 /**
   |============================
   | Components
   |============================
 */
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 /* Logo */
 .logo {
   font-family: var(--secondary-font);
@@ -121,6 +150,12 @@ h3 {
 
 /* Button */
 .btn {
+
+  border-radius: 4px;
+  padding: 16px 32px;
+  /* width: 169px; */
+  /* height: 56px; */
+
   font-weight: var(--font-weight-medium);
   line-height: calc(24/16);
   letter-spacing: 0.04em;
@@ -151,6 +186,11 @@ h3 {
   | Page header
   |============================
 */
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 /* Navigation page */
 .page-nav .link {
   font-size: 16px;
@@ -169,7 +209,17 @@ h3 {
   |============================
 */
 .hero-section {
+  padding-top: 188px;
+  padding-bottom: 188px;
+
   background-color: var(--color-dark);
+}
+
+.hero-section .title {
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 
 /**
